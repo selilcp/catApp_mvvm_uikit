@@ -35,6 +35,7 @@
 		0A47A8712C2214A10074E928 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8702C2214A10074E928 /* CatImage.swift */; };
 		0A47A8742C2215CB0074E928 /* CatListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8732C2215CB0074E928 /* CatListHandler.swift */; };
 		0A47A8762C2216370074E928 /* CatsListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8752C2216370074E928 /* CatsListingService.swift */; };
+		0A47A8782C2216BA0074E928 /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8772C2216BA0074E928 /* ImageDownload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		0A47A8702C2214A10074E928 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
 		0A47A8732C2215CB0074E928 /* CatListHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListHandler.swift; sourceTree = "<group>"; };
 		0A47A8752C2216370074E928 /* CatsListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListingService.swift; sourceTree = "<group>"; };
+		0A47A8772C2216BA0074E928 /* ImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 		0A47A8482C2203190074E928 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A8772C2216BA0074E928 /* ImageDownload.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -423,6 +426,7 @@
 				0A47A86D2C22138C0074E928 /* MainCoordinator.swift in Sources */,
 				0A47A8692C22123A0074E928 /* CatDetailsViewController.swift in Sources */,
 				0A47A8762C2216370074E928 /* CatsListingService.swift in Sources */,
+				0A47A8782C2216BA0074E928 /* ImageDownload.swift in Sources */,
 				0A47A8512C2206160074E928 /* APIHandler.swift in Sources */,
 				0A47A8142C2202360074E928 /* CatsListingController.swift in Sources */,
 				0A47A84B2C2204000074E928 /* AppEnvironment.swift in Sources */,

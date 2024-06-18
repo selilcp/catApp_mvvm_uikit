@@ -29,6 +29,7 @@
 		0A47A8662C220D070074E928 /* CatsListingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8642C220D070074E928 /* CatsListingTableViewCell.swift */; };
 		0A47A8672C220D070074E928 /* CatsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A47A8652C220D070074E928 /* CatsListingTableViewCell.xib */; };
 		0A47A8692C22123A0074E928 /* CatDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8682C2212390074E928 /* CatDetailsViewController.swift */; };
+		0A47A86B2C2213270074E928 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86A2C2213270074E928 /* AppNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		0A47A8642C220D070074E928 /* CatsListingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListingTableViewCell.swift; sourceTree = "<group>"; };
 		0A47A8652C220D070074E928 /* CatsListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatsListingTableViewCell.xib; sourceTree = "<group>"; };
 		0A47A8682C2212390074E928 /* CatDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailsViewController.swift; sourceTree = "<group>"; };
+		0A47A86A2C2213270074E928 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			children = (
 				0A47A8132C2202360074E928 /* CatsListingController.swift */,
 				0A47A8682C2212390074E928 /* CatDetailsViewController.swift */,
+				0A47A86A2C2213270074E928 /* AppNavigationController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				0A47A8122C2202360074E928 /* SceneDelegate.swift in Sources */,
 				0A47A85C2C220A3A0074E928 /* StoryboardName.swift in Sources */,
 				0A47A8662C220D070074E928 /* CatsListingTableViewCell.swift in Sources */,
+				0A47A86B2C2213270074E928 /* AppNavigationController.swift in Sources */,
 				0A47A84F2C2205B10074E928 /* APIError.swift in Sources */,
 				0A47A8582C2208A90074E928 /* PersistenceController.swift in Sources */,
 			);

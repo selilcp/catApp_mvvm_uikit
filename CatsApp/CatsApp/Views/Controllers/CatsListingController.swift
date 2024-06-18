@@ -47,7 +47,14 @@ class CatsListingController: UIViewController, Storyboarded {
 
 extension CatsListingController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let viewModel = viewModel,
+              let selectedCat = viewModel.getCatWithPosition(pos: indexPath.item)
+        else { return }
+        let isFavourite = viewModel.isFavourite(cat: selectedCat)
+        let detailViewModel = CatDetailViewModel(detailsService: DefaultCatDetailsService(),
+                                          cat: selectedCat,
+                                          isFavourite: isFavourite)
+        coordinator?.gotoDetails(detailViewModel: detailViewModel)
     }
 }
 

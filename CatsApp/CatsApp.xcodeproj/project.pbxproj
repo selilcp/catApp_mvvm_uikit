@@ -36,6 +36,7 @@
 		0A47A8742C2215CB0074E928 /* CatListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8732C2215CB0074E928 /* CatListHandler.swift */; };
 		0A47A8762C2216370074E928 /* CatsListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8752C2216370074E928 /* CatsListingService.swift */; };
 		0A47A8782C2216BA0074E928 /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8772C2216BA0074E928 /* ImageDownload.swift */; };
+		0A47A87A2C22174F0074E928 /* CatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8792C22174F0074E928 /* CatListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 		0A47A8732C2215CB0074E928 /* CatListHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListHandler.swift; sourceTree = "<group>"; };
 		0A47A8752C2216370074E928 /* CatsListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListingService.swift; sourceTree = "<group>"; };
 		0A47A8772C2216BA0074E928 /* ImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
+		0A47A8792C22174F0074E928 /* CatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 		0A47A8412C2202780074E928 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A8792C22174F0074E928 /* CatListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				0A47A85E2C220A550074E928 /* Storyboarded.swift in Sources */,
 				0A47A8562C22088D0074E928 /* CatsApp.xcdatamodeld in Sources */,
 				0A47A85A2C2209B00074E928 /* Coordinator.swift in Sources */,
+				0A47A87A2C22174F0074E928 /* CatListViewModel.swift in Sources */,
 				0A47A8102C2202360074E928 /* AppDelegate.swift in Sources */,
 				0A47A8122C2202360074E928 /* SceneDelegate.swift in Sources */,
 				0A47A85C2C220A3A0074E928 /* StoryboardName.swift in Sources */,

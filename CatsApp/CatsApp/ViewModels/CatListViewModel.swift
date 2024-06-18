@@ -10,9 +10,9 @@ import Foundation
 class CatListViewModel{
     
     var cats:[Cat]?
-    private let service: DefaultCatsListingService
+    private let service: CatsListingService
     
-    init (service: DefaultCatsListingService) {
+    init (service: CatsListingService) {
         self.service = service
     }
     

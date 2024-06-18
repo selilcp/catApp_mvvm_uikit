@@ -33,6 +33,8 @@
 		0A47A86D2C22138C0074E928 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86C2C22138C0074E928 /* MainCoordinator.swift */; };
 		0A47A86F2C22148D0074E928 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86E2C22148D0074E928 /* Cat.swift */; };
 		0A47A8712C2214A10074E928 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8702C2214A10074E928 /* CatImage.swift */; };
+		0A47A8742C2215CB0074E928 /* CatListHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8732C2215CB0074E928 /* CatListHandler.swift */; };
+		0A47A8762C2216370074E928 /* CatsListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8752C2216370074E928 /* CatsListingService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		0A47A86C2C22138C0074E928 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		0A47A86E2C22148D0074E928 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		0A47A8702C2214A10074E928 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
+		0A47A8732C2215CB0074E928 /* CatListHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatListHandler.swift; sourceTree = "<group>"; };
+		0A47A8752C2216370074E928 /* CatsListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsListingService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +139,10 @@
 			children = (
 				0A47A8482C2203190074E928 /* Utilities */,
 				0A47A8472C22030E0074E928 /* Network */,
+				0A47A8432C2202C10074E928 /* Services */,
 				0A47A8462C2202F70074E928 /* Storyboards */,
 				0A47A8452C2202E90074E928 /* Coredata */,
 				0A47A8442C2202D30074E928 /* Coordinators */,
-				0A47A8432C2202C10074E928 /* Services */,
 				0A47A8422C2202B40074E928 /* Models */,
 				0A47A8412C2202780074E928 /* ViewModels */,
 				0A47A8402C2202710074E928 /* Views */,
@@ -203,6 +207,7 @@
 		0A47A8432C2202C10074E928 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A8752C2216370074E928 /* CatsListingService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 		0A47A8472C22030E0074E928 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A8722C2215B30074E928 /* APIHandlers */,
 				0A47A84A2C2204000074E928 /* AppEnvironment.swift */,
 				0A47A84C2C22056D0074E928 /* APILoader.swift */,
 				0A47A84E2C2205B10074E928 /* APIError.swift */,
@@ -272,6 +278,14 @@
 				0A47A8652C220D070074E928 /* CatsListingTableViewCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		0A47A8722C2215B30074E928 /* APIHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				0A47A8732C2215CB0074E928 /* CatListHandler.swift */,
+			);
+			path = APIHandlers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,6 +422,7 @@
 			files = (
 				0A47A86D2C22138C0074E928 /* MainCoordinator.swift in Sources */,
 				0A47A8692C22123A0074E928 /* CatDetailsViewController.swift in Sources */,
+				0A47A8762C2216370074E928 /* CatsListingService.swift in Sources */,
 				0A47A8512C2206160074E928 /* APIHandler.swift in Sources */,
 				0A47A8142C2202360074E928 /* CatsListingController.swift in Sources */,
 				0A47A84B2C2204000074E928 /* AppEnvironment.swift in Sources */,
@@ -423,6 +438,7 @@
 				0A47A86F2C22148D0074E928 /* Cat.swift in Sources */,
 				0A47A86B2C2213270074E928 /* AppNavigationController.swift in Sources */,
 				0A47A84F2C2205B10074E928 /* APIError.swift in Sources */,
+				0A47A8742C2215CB0074E928 /* CatListHandler.swift in Sources */,
 				0A47A8582C2208A90074E928 /* PersistenceController.swift in Sources */,
 				0A47A8712C2214A10074E928 /* CatImage.swift in Sources */,
 			);

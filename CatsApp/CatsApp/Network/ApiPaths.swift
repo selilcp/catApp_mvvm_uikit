@@ -14,4 +14,6 @@ struct APIPath{
     init(){
         baseURL = AppEnvironment().baseURL
     }
+    
+    var getCatsList:String { "\(baseURL)breeds" }
 }

@@ -7,7 +7,9 @@
 
 import UIKit
 
-class CatsListingController: UIViewController {
+class CatsListingController: UIViewController, Storyboarded {
+    
+    var coordinator: MainCoordinator?
     
     @IBOutlet var tableView: UITableView!
 

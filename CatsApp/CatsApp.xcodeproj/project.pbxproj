@@ -30,6 +30,7 @@
 		0A47A8672C220D070074E928 /* CatsListingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A47A8652C220D070074E928 /* CatsListingTableViewCell.xib */; };
 		0A47A8692C22123A0074E928 /* CatDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8682C2212390074E928 /* CatDetailsViewController.swift */; };
 		0A47A86B2C2213270074E928 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86A2C2213270074E928 /* AppNavigationController.swift */; };
+		0A47A86D2C22138C0074E928 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86C2C22138C0074E928 /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		0A47A8652C220D070074E928 /* CatsListingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatsListingTableViewCell.xib; sourceTree = "<group>"; };
 		0A47A8682C2212390074E928 /* CatDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailsViewController.swift; sourceTree = "<group>"; };
 		0A47A86A2C2213270074E928 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		0A47A86C2C22138C0074E928 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				0A47A8592C2209B00074E928 /* Coordinator.swift */,
 				0A47A85B2C220A3A0074E928 /* StoryboardName.swift */,
 				0A47A85D2C220A550074E928 /* Storyboarded.swift */,
+				0A47A86C2C22138C0074E928 /* MainCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A47A86D2C22138C0074E928 /* MainCoordinator.swift in Sources */,
 				0A47A8692C22123A0074E928 /* CatDetailsViewController.swift in Sources */,
 				0A47A8512C2206160074E928 /* APIHandler.swift in Sources */,
 				0A47A8142C2202360074E928 /* CatsListingController.swift in Sources */,

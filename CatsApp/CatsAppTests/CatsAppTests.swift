@@ -8,29 +8,62 @@
 import XCTest
 @testable import CatsApp
 
-final class CatsAppTests: XCTestCase {
+final class CatListViewModelTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testGetCatWithPosition() throws {
+     
+        var cats: [Cat] = []
+        for element in 1...5{
+            cats.append(Cat(id: "\(element)",
+                            name: "\(element)-name",
+                            origin: "\(element)-origin",
+                            description: "\(element)-description",
+                            image: nil,
+                            life_span: "") )
+        }
+        let service = mockCatListingService(cats: cats,
+                                            error: nil)
+        let sut = CatListViewModel(service: service)
+        sut.fetchCatList { _ in
+            
+        }
+        
+        if let thirdData = sut.getCatWithPosition(pos: 2){
+            XCTAssertEqual(cats[2].id, thirdData.id)
+            XCTAssertEqual(cats[2].name, thirdData.name)
+            XCTAssertEqual(cats[2].origin, thirdData.origin)
+            XCTAssertEqual(cats[2].description, thirdData.description)
         }
     }
 
+}
+
+
+class mockCatListingService: CatsListingService{
+    
+    var cats: [CatsApp.Cat]?
+    var error: CatsApp.APIError?
+    
+    init(cats:[CatsApp.Cat]?, error: CatsApp.APIError?){
+        self.cats = cats
+        self.error = error
+    }
+    
+    func getCats(completionHandler: @escaping ([CatsApp.Cat]?, CatsApp.APIError?) -> ()) {
+        completionHandler(cats, error)
+    }
+    
+    func favouriteCatCheck(id: String) -> Bool {
+        return false
+    }
+    
+    func removeFavouriteCat(id: String) {
+        
+    }
+    
+    func setAsFavourite(cat: CatsApp.Cat) {
+        
+    }
+    
+    
 }

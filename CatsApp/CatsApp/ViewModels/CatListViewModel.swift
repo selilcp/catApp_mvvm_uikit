@@ -34,4 +34,16 @@ class CatListViewModel{
         }
         return nil
     }
+    
+    func isFavourite(cat:Cat) -> Bool{
+        return service.favouriteCatCheck(id: cat.id)
+    }
+    
+    func removeFromFavourite(cat:Cat){
+        service.removeFavouriteCat(id: cat.id)
+    }
+    
+    func setFavourite(cat:Cat){
+        service.setAsFavourite(cat: cat)
+    }
 }

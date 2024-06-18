@@ -62,9 +62,27 @@ extension CatsListingController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CatsListingTableViewCell") as! CatsListingTableViewCell
+        cell.delegate = self
         if let cat = viewModel?.getCatWithPosition(pos: indexPath.item){
-            cell.updateUI(cat:cat)
+            let isFavourite = viewModel?.isFavourite(cat: cat) ?? false
+            cell.updateUI(cat:cat,
+                          favourite: isFavourite)
         }
         return cell
     }
+}
+
+extension CatsListingController: CatsListingTableViewCellDelegate {
+    func favouriteClick(cat: Cat) {
+        guard let viewModel = viewModel else { return }
+        if viewModel.isFavourite(cat: cat){
+            viewModel.removeFromFavourite(cat: cat)
+        }else{
+            viewModel.setFavourite(cat: cat)
+        }
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+    
 }

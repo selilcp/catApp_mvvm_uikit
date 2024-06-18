@@ -23,6 +23,9 @@
 		0A47A8532C22067E0074E928 /* ApiPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8522C22067E0074E928 /* ApiPaths.swift */; };
 		0A47A8562C22088D0074E928 /* CatsApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8542C22088D0074E928 /* CatsApp.xcdatamodeld */; };
 		0A47A8582C2208A90074E928 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8572C2208A90074E928 /* PersistenceController.swift */; };
+		0A47A85A2C2209B00074E928 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8592C2209B00074E928 /* Coordinator.swift */; };
+		0A47A85C2C220A3A0074E928 /* StoryboardName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A85B2C220A3A0074E928 /* StoryboardName.swift */; };
+		0A47A85E2C220A550074E928 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A85D2C220A550074E928 /* Storyboarded.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		0A47A8522C22067E0074E928 /* ApiPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPaths.swift; sourceTree = "<group>"; };
 		0A47A8552C22088D0074E928 /* CatsApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatsApp.xcdatamodel; sourceTree = "<group>"; };
 		0A47A8572C2208A90074E928 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		0A47A8592C2209B00074E928 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		0A47A85B2C220A3A0074E928 /* StoryboardName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardName.swift; sourceTree = "<group>"; };
+		0A47A85D2C220A550074E928 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +193,9 @@
 		0A47A8442C2202D30074E928 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A8592C2209B00074E928 /* Coordinator.swift */,
+				0A47A85B2C220A3A0074E928 /* StoryboardName.swift */,
+				0A47A85D2C220A550074E928 /* Storyboarded.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -372,9 +381,12 @@
 				0A47A84B2C2204000074E928 /* AppEnvironment.swift in Sources */,
 				0A47A8532C22067E0074E928 /* ApiPaths.swift in Sources */,
 				0A47A84D2C22056D0074E928 /* APILoader.swift in Sources */,
+				0A47A85E2C220A550074E928 /* Storyboarded.swift in Sources */,
 				0A47A8562C22088D0074E928 /* CatsApp.xcdatamodeld in Sources */,
+				0A47A85A2C2209B00074E928 /* Coordinator.swift in Sources */,
 				0A47A8102C2202360074E928 /* AppDelegate.swift in Sources */,
 				0A47A8122C2202360074E928 /* SceneDelegate.swift in Sources */,
+				0A47A85C2C220A3A0074E928 /* StoryboardName.swift in Sources */,
 				0A47A84F2C2205B10074E928 /* APIError.swift in Sources */,
 				0A47A8582C2208A90074E928 /* PersistenceController.swift in Sources */,
 			);

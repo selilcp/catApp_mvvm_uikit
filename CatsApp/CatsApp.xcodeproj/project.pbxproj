@@ -16,6 +16,7 @@
 		0A47A8272C2202370074E928 /* CatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8262C2202370074E928 /* CatsAppTests.swift */; };
 		0A47A8312C2202380074E928 /* CatsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8302C2202380074E928 /* CatsAppUITests.swift */; };
 		0A47A8332C2202380074E928 /* CatsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8322C2202380074E928 /* CatsAppUITestsLaunchTests.swift */; };
+		0A47A84B2C2204000074E928 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A84A2C2204000074E928 /* AppEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0A47A82C2C2202380074E928 /* CatsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A47A8302C2202380074E928 /* CatsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAppUITests.swift; sourceTree = "<group>"; };
 		0A47A8322C2202380074E928 /* CatsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A47A84A2C2204000074E928 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		0A47A8472C22030E0074E928 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A84A2C2204000074E928 /* AppEnvironment.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A47A8142C2202360074E928 /* ViewController.swift in Sources */,
+				0A47A84B2C2204000074E928 /* AppEnvironment.swift in Sources */,
 				0A47A8102C2202360074E928 /* AppDelegate.swift in Sources */,
 				0A47A8122C2202360074E928 /* SceneDelegate.swift in Sources */,
 			);

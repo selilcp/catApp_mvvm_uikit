@@ -24,6 +24,6 @@ class MainCoordinator: Coordinator {
     func gotoDetails(detailViewModel: CatDetailViewModel) {
         let vc = CatDetailsViewController.instantiate(storyboardName: .Main)
         vc.viewModel = detailViewModel
-        navigationController.pushViewController(vc, animated: false)
+        navigationController.pushViewController(vc, animated: true)
     }
 }

@@ -31,6 +31,8 @@
 		0A47A8692C22123A0074E928 /* CatDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8682C2212390074E928 /* CatDetailsViewController.swift */; };
 		0A47A86B2C2213270074E928 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86A2C2213270074E928 /* AppNavigationController.swift */; };
 		0A47A86D2C22138C0074E928 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86C2C22138C0074E928 /* MainCoordinator.swift */; };
+		0A47A86F2C22148D0074E928 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A86E2C22148D0074E928 /* Cat.swift */; };
+		0A47A8712C2214A10074E928 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A47A8702C2214A10074E928 /* CatImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		0A47A8682C2212390074E928 /* CatDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDetailsViewController.swift; sourceTree = "<group>"; };
 		0A47A86A2C2213270074E928 /* AppNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		0A47A86C2C22138C0074E928 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0A47A86E2C22148D0074E928 /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
+		0A47A8702C2214A10074E928 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,8 @@
 		0A47A8422C2202B40074E928 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0A47A86E2C22148D0074E928 /* Cat.swift */,
+				0A47A8702C2214A10074E928 /* CatImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -414,9 +420,11 @@
 				0A47A8122C2202360074E928 /* SceneDelegate.swift in Sources */,
 				0A47A85C2C220A3A0074E928 /* StoryboardName.swift in Sources */,
 				0A47A8662C220D070074E928 /* CatsListingTableViewCell.swift in Sources */,
+				0A47A86F2C22148D0074E928 /* Cat.swift in Sources */,
 				0A47A86B2C2213270074E928 /* AppNavigationController.swift in Sources */,
 				0A47A84F2C2205B10074E928 /* APIError.swift in Sources */,
 				0A47A8582C2208A90074E928 /* PersistenceController.swift in Sources */,
+				0A47A8712C2214A10074E928 /* CatImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

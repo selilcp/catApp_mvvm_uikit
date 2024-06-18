@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 protocol CatsListingTableViewCellDelegate:NSObject {
     func favouriteClick(cat:Cat)
@@ -36,7 +37,7 @@ class CatsListingTableViewCell: UITableViewCell {
         catImageView.image = nil
         if let urlString = cat.image?.url,
            let url = URL(string: urlString){
-            catImageView.loadImageWithURL(url)
+            catImageView.sd_setImage(with: url)
         }
         updateFavouriteImage(saved: favourite)
     }

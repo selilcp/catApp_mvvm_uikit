@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class CatDetailsViewController: UIViewController, Storyboarded {
 
@@ -41,7 +42,7 @@ class CatDetailsViewController: UIViewController, Storyboarded {
         descriptionText.text = viewModel.cat.description
         if let imageURLSting = viewModel.cat.image?.url,
            let imageURL = URL(string: imageURLSting){
-            catImageView.loadImageWithURL(imageURL)
+            catImageView.sd_setImage(with: imageURL)
         }
         updateFavouriteImage(isFavourite: viewModel.isFavourite)
     }

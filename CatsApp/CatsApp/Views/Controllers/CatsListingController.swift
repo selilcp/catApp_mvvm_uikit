@@ -11,6 +11,7 @@ class CatsListingController: UIViewController, Storyboarded {
     
     var coordinator: MainCoordinator?
     var viewModel:CatListViewModel?
+    private var pullControl:UIRefreshControl?
     
     @IBOutlet var tableView: UITableView!
 
@@ -22,6 +23,7 @@ class CatsListingController: UIViewController, Storyboarded {
         registerCakeListCell(tableView: tableView)
         viewModel = CatListViewModel(service: DefaultCatsListingService())
         fetchData()
+        addPullToRefreshList(tableView: tableView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,4 +87,18 @@ extension CatsListingController: CatsListingTableViewCellDelegate {
         }
     }
     
+}
+
+extension CatsListingController{
+
+    func addPullToRefreshList(tableView:UITableView){
+        pullControl = UIRefreshControl()
+        pullControl?.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        pullControl?.addTarget(self, action: #selector(refreshListData(_:)), for: .valueChanged)
+        tableView.refreshControl = pullControl
+    }
+    @objc private func refreshListData(_ sender: Any) {
+        pullControl?.endRefreshing()
+        fetchData()
+    }
 }

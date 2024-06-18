@@ -26,4 +26,12 @@ class CatListViewModel{
             complitionHandler(error)
         })
     }
+    
+    func getCatWithPosition(pos:Int) -> Cat?{
+        guard let cats = cats else { return nil }
+        if cats.indices.contains(pos){
+            return cats[pos]
+        }
+        return nil
+    }
 }
